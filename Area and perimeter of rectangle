@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int l,b;
+    float l,b;
     float area,perimeter;
     printf("length of rectangle ");
     scanf("%f",&l);
@@ -8,7 +8,7 @@ int main(){
     scanf("%f",&b);
     area = l*b;
     perimeter = 2*(l+b);
-    printf("area = %f\n",area);
-    printf("perimeter = %f",perimeter);
+    printf("area = %2f\n",area);
+    printf("perimeter = %2f",perimeter);
     return 0;
 }
