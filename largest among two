@@ -1,0 +1,14 @@
+//program to find the largest number among the two
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("the value of x = ");
+    scanf("%d",&x);
+    printf("the value of y = ");
+    scanf("%d",&y);
+    if(x>y){
+    printf(" x is larger");
+}
+   else{ printf("y is larger");
+   }
+}
