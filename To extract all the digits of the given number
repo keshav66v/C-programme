@@ -1,0 +1,14 @@
+//WAP to extract all the digits of the given number
+#include<stdio.h>
+int main(){
+    int num,rem;
+    printf("Enter the number : ");
+    scanf("%d", &num);
+    printf("Digits of the number are : ");
+    while(num !=0){
+        rem = num % 10;
+        printf("%d ",rem);
+        num = num/10;
+    }
+    return 0; 
+}
