@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int c;
+    scanf("%d",&c);
+    double m,k;
+    m = (double)c /100;
+    k = (double)c/100000;
+    printf("%.2lf %.2lf",m,k);
+    return 0;
+}
