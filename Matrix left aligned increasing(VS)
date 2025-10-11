@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int N = 4; // Number of rows
+    
+    for (int i = 1; i <= N; i++) {
+        // Loop to print asterisks
+        for (int k = 1; k <= i; k++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
