@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+int main() {
+    int U;
+    float bill_amount = 0.0;
+    float total_bill;
+    float surcharge;
+    scanf("%d", &U);
+    if (U <= 50) {
+        bill_amount = U * 0.50;
+    } else if (U <= 150) { 
+        bill_amount = (50 * 0.50) + ((U - 50) * 0.75);
+    } else if (U <= 250) { 
+        bill_amount = (50 * 0.50) + (100 * 0.75) + ((U - 150) * 1.20);
+    } else { 
+        bill_amount = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + ((U - 250) * 1.50);
+    }
+
+    
+    surcharge = bill_amount * 0.20;
+    total_bill = bill_amount + surcharge;
+
+    printf("%.2f\n", total_bill);
+
+    return 0;
+}
