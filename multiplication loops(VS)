@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int i,n,multi=1;
+    printf("Enter n = ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        multi *= i;
+    }
+    printf("%d",multi);
+    return 0;
+}
