@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h> 
+    int sumArray(int a[] , int size) {
+        size--;
+        if(size == 0)
+            return a[0];
+        else
+            return a[size]+sumArray(a, size);
+    }
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    for(int i=0; i<size;i++){
+        scanf("%d",&arr[i]);
+}
+   printf("%d", sumArray(arr ,size));
+    return 0;
+}
