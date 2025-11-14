@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int reverse(int n, int rev){
+    
+ if(n==0)
+     
+        return rev;
+        rev = rev * 10 + n%10;
+        return reverse(n/10, rev);
+}
+    int main(){
+    int num;
+    scanf("%d",&num);
+   
+    printf("%d ", reverse(num,0));
+
+    return 0;
+}
